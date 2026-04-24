@@ -250,6 +250,6 @@ class Field {
   }
 }
 
-const game = new Field(Field.generateField(5, 10, 0.25));
+const game = new Field(Field.generateField(10, 10, 0.25));
 
 game.runGame();
