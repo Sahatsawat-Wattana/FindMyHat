@@ -37,7 +37,7 @@ class Field {
       [0, 1],
     ];
 
-    while (stack.length > 0) {
+    while (stack.length > 0) { 
       const [currX, currY] = stack.pop();
 
       if (currX === hatPos[0] && currY === hatPos[1]) {
@@ -221,7 +221,7 @@ class Field {
   }
 
   static printMap(field) {
-    console.log(field.map((row) => row.join("")).join("\n"));
+    console.log(field.map((row) => row.join(" ")).join("\n"));
   }
 
   runGame() {
@@ -250,6 +250,8 @@ class Field {
   }
 }
 
-const game = new Field(Field.generateField(10, 10, 0.25));
+const game = new Field(Field.generateField(5, 6, 0.25));
 
 game.runGame();
+
+
